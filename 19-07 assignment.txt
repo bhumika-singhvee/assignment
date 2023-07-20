@@ -1,0 +1,190 @@
+q6
+#include <stdio.h>
+
+int main()
+{
+    int h;
+    printf("enter your height into metre");
+    scanf("%d",&h);
+    int a=h*100;
+    if(a>0 && a<=100)
+    {
+        printf("your height is low");
+    }
+    else if(a>100 && a<=200)
+    {
+        printf("your height is mid");
+    }
+    else if(a>200 && a<=1000)
+    {
+        printf("your height is high");
+    }
+    
+
+    return 0;
+}
+*********************************************************************
+q7
+#include <stdio.h>
+
+int main()
+{
+    int rollno;
+    printf("enter your roll no");
+    scanf("%d",&rollno);
+    int a,b,c;
+    printf("enter your a,b,c");
+    scanf("%d %d %d",&a,&b,&c);
+    int total=a+b+c;
+    printf("total=%d \n",total);
+    int percentage=(total/300)*100/100;
+    printf("percentage=%d",percentage);
+    if(percentage=>33 && percentage<=50)
+    {
+        printf("FIRST DIVISION");
+    }
+    else if(percentage>50 && percentage<=80)
+    {
+        printf("SECOND DIVISION");
+    }
+    else if(percentage>80 && percentage<=100)
+    {
+        printf("THIRD DIVISION");
+    }
+    else
+    {
+        printf("FAIL");
+    }
+
+    return 0;
+}
+************************************************************************************
+q9
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("Enter number a,b,c");
+    scanf("%d %d %d",&a,&b,&c);
+    if((a>b && a>c)||(b>a && b>c))
+    {
+        printf("a is greater or b is greater");
+    }
+    else
+    {
+        printf("c is greater");
+    }
+
+    return 0;
+}
+************************************************************************************************
+q11
+#include <stdio.h>
+
+int main()
+{
+    int sal;
+    printf("Enter your salary");
+    scanf("%d",&sal);
+    int holiday ;
+    printf("Enter your number of holiday");
+    scanf("%d",&holiday);
+    if(holiday==1)
+    {
+        printf("you get full salary");
+    }
+    else if(holiday>=2 && holiday<=5)
+    {
+        int s=sal*5/100;
+        int salary=sal-s;
+        printf("salary=%d\n",salary);
+    }
+    else if(holiday>5 && holiday<=14)
+    {
+        int s=sal*10/100;
+        int salary=sal-s;
+        printf("salary=%d\n",salary);
+    }
+    else if(holiday>=15)
+    {
+        int s=sal*10/100;
+        int salary=sal-s;
+        printf("salary=%d\n",salary);
+    }
+    else
+    {
+        printf("sorry this month no salary");
+    }
+
+
+    return 0;
+}
+############################################################################################
+q12
+#include <stdio.h>
+
+int main()
+{
+    int unit;
+    printf("Enter your unit");
+    scanf("%d",&unit);
+    int amount=unit*10 ;
+    printf("amount=%d\n",amount);
+    if(unit>=1 && unit<=10)
+    {
+        int discount=amount*10/100;
+        int total=amount-discount;
+        printf("discount=%d\n",discount);
+        printf("total=%d\n",total);
+    }
+    else if(unit>=11 && unit<=20)
+    {
+        int discount=amount*15/100;
+        int total=amount-discount;
+        printf("discount=%d\n",discount);
+        printf("total=%d\n",total);
+    }    
+    else if(unit>=21 && unit<=40)
+    {
+        int discount=amount*30/100;
+        int total=amount-discount;
+        printf("discount=%d\n",discount);
+        printf("total=%d\n",total);
+    }    
+    else if(unit==50)
+    {
+        int discount=amount*50/100;
+        int total=amount-discount;
+        printf("discount=%d\n",discount);
+        printf("total=%d\n",total);
+    }    
+    
+    else
+    {
+        printf("sorry not valid for discount");
+    }
+
+
+    return 0;
+}
+******************************************************************************************
+q1
+#include <stdio.h>
+
+int main()
+{
+	int year;
+	printf("enter a year");
+	scanf("%d",&year);
+	if(year%4==0)
+	{
+		printf("it is a leap yar");
+	}
+	else{
+		printf("it is not leap year");
+	}
+	return 0;
+	
+}
+############################################################################

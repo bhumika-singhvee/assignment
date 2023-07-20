@@ -1,0 +1,634 @@
+q1
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d,e;
+    printf("enter value of a,b,c,d,e");
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>b && a>c && a>d && a>e)
+    {
+     printf("a is greater than b,c,d,e");   
+    }
+    else if(b>a && b>c && b>d && b>e)
+    {
+      printf("b is greater than a,c,d,e");   
+    }
+    else if(c>a && c>b && c>d && c>e)
+    {
+      printf("c is greater than a,b,d,e");  
+    }  
+    else if(d>a && d>b && d>e && d>c)
+    {
+     printf("d is greater than a,b,c,e"); 
+    }
+    else if(e>a && e>b && e>c && e>d)
+    {
+     printf("e is greater than a,b,c,d"); 
+    }    
+        
+    else
+    {
+        printf("all are equal");
+    }
+        
+
+    return 0;
+}
+***************************************************
+2
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter value of a");
+    scanf("%d",&a);
+    if(a==1)
+    {
+     printf("SUNDAY");   
+    }
+    else if(a==2)
+    {
+      printf("MONDAY");   
+    }
+    else if(a==3)
+    {
+      printf("TUESDAY");  
+    }  
+    else if(a==4)
+    {
+      printf("WEDNESDAY");
+    }
+    else if(a==5)
+    {
+      printf("THURSDAY"); 
+    }    
+        
+    else if(a==6)
+    {
+        printf("FRIDAY");
+    }
+    else if(a==7)
+    {
+     printf("SATURDAY");
+    }
+    else
+    {
+        printf("please enter valid week day");
+    }
+        
+
+    return 0;
+}
+**************************************************************************************
+3
+#include <stdio.h>
+
+int main()
+{
+    int age;
+    printf("enter value of a");
+    scanf("%d",&age);
+    if(age>=18)
+    {
+     printf("you are valid to vote");   
+    }
+    else
+    {
+        printf("you are not valid");
+    }
+    
+        
+
+    return 0;
+}
+*************************************************************************************
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    printf("enter num");
+    scanf("%d",&num);
+    if(num>10)
+    {
+     printf("greater than 10");   
+    }
+    else
+    {
+        printf("smaller than 10");
+    }
+    
+        
+
+    return 0;
+}
+********************************************************************************************
+4
+#include <stdio.h>
+
+int main()
+{
+    int a,b;
+    printf("enter a,b");
+    scanf("%d %d",&a,&b);
+    if(a>b)
+    {
+     printf("a is greater than b");   
+    }
+    else
+    {
+        printf("b is greater than a");
+    }
+    
+        
+
+    return 0;
+}
+*********************************************************************************
+5
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("enter a,b,c");
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>b && a>c)
+    {
+     printf("a is greater athan b and c");   
+    }
+    else if(b>a && b>c)
+    {
+        printf("b is greater than a and c");
+    }
+    else
+    {
+     printf("c is greater than b and a");
+    }
+    
+        
+
+    return 0;
+}
+***********************************************************************************
+6
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d,e;
+    printf("enter a,b,c,d,e");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    if(a>b && a>c && a>d && a>e)
+    {
+     printf("a is greater athan b,c,d,e");   
+    }
+     else if(b>a && b>c && a>d && a>e)
+    {
+        printf("b is greater than a,c,d,e");
+    }
+    else if(c>a && c>b && c>d && c>e)
+    {
+     printf("c is greater ");
+    }
+     else if(d>a && d>c && d>b && d>e)
+    {
+       printf(" d is greater than a and c");
+    } 
+     else if(e>a && e>b && e>d && e>c)
+     {
+       printf("e is greater than a and c");  
+     }
+        
+
+    return 0;
+}
+############################################################################################
+6
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("enter a ");
+    scanf("%d",&a);
+    if(a>0)
+    {
+     printf("positive number");   
+    }
+     else if(a<0)
+    {
+        printf("negative number");
+    }
+   else
+   {
+       printf("zero");
+   }
+
+    return 0;
+}
+
+********************************************************************************************
+7
+#include <stdio.h>
+
+int main()
+{
+    char vow;
+    printf("enter vow ");
+    scanf("%c",&vow);
+    if(vow=='a'||vow=='e'||vow=='i'||vow=='o'||vow=='u')
+    {
+     printf("it is a vowel");   
+    }
+     
+   else
+   {
+       printf("consonants");
+   }
+
+    return 0;
+}
+***************************************************************************************
+8
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter a ");
+    scanf("%d",&a);
+    if(a%5==0 && a%11==0)
+    {
+     printf("it is divisble by 5 and 11");   
+    }
+     
+   else
+   {
+       printf("not divisble by 5 and 11");
+   } 
+
+    return 0;
+}
+
+**************************************************************************************
+9
+#include <stdio.h>
+int main()
+{
+    char alpha;
+    printf("enter alpha ");
+    scanf("%c",&alpha);
+    if(alpha>='a' && alpha<='z')
+    {
+     printf("lower case");   
+    }
+     
+    else if(alpha>='A' && alpha<='Z')   
+    {
+       printf("upper case");
+    }
+    else
+    {
+        printf("enter valid char");
+    }
+
+    return 0;
+}
+
+****************************************************************************************
+10
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    printf("enter number ");
+    scanf("%d",&a);
+    if(a%3==0 && a%7==0)
+    {
+     printf("num is divisble");   
+    }
+     
+    else
+    {
+        printf("num is not divisble");
+    }
+
+    return 0;
+}
+
+*******************************************************************************************
+11
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("enter a number");
+	scanf("%d %d",&a,&b);
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	printf("the swap value of a is %d\n",a);
+	printf("the swap value of b is %d\n",b);
+	return 0;
+}
+***************************************************************************************
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("enter a number");
+	scanf("%d %d",&a,&b);
+	a=a*b;
+	b=a/b;
+	a=a/b;
+	printf("the swap value of a is %d\n",a);
+	printf("the swap value of b is %d\n",b);
+	return 0;
+}
+******************************************************************************************
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("enter a number");
+	scanf("%d %d %d",&a,&b,&c);
+	c=a;
+	a=b;
+	b=c;
+	printf("the swap value of a is %d\n",a);
+	printf("the swap value of b is %d\n",b);
+	return 0;
+}
+
+
+
+******************************************************************************************
+12
+#include <stdio.h>
+
+int main()
+{
+    char b;
+    printf("enter temp unit");
+    scanf("%c",&b);
+    if(b=='c')
+    {
+     int a;
+     printf("enter temp value");
+     scanf("%d",&a);
+     int temp=(a-32)*5/9;
+     printf("temp=%d",temp);   
+    }
+     else if(b=='f')
+    {
+      int a;  
+      printf("enter temp value");
+      scanf("%d",&a);
+      int temp=(a*9/5)+32; 
+      printf("temp=%d",temp);
+    }
+   else
+   {
+       printf("please enter valid temperature");
+   }
+
+    return 0;
+}
+*************************************************************************************************
+13
+#include<stdio.h>
+int main()
+{
+  printf("if you want to print area write a \n");
+    printf("if you want to print volume write v ");
+    char b;
+    printf("enter your choice");
+    scanf("%c",&b);
+    if(b=='a')
+    {
+     char c;
+     printf("enter you want to print area of s ,t,r");
+     scanf("%c",&c);
+     if(c=='s')
+     {
+        int d;
+        printf("enter your value");
+        scanf("%d",&d);
+        int area=d*d;
+        printf("area=%d",area);
+      }
+      else if(c=='t')
+      {
+        int d;
+        printf("enter your base");
+        scanf("%d",&d);
+        int e;
+        printf("enter your height");
+        scanf("%d",&e);
+        int area=0.5*d*e;
+        printf("area=%d",area);  
+      }
+      else if(c=='r')
+     {
+      int f;  
+      printf("enter length");
+      scanf("%d",&f);
+      int g;
+      printf("enter breadth");
+      int area=g*f; 
+      printf("area=%d",area);
+    }
+    else if(b=='v')
+    {
+    char c;
+     printf("enter you want to print volume of s ,t,r");
+     scanf("%c",&c);
+     if(c=='s')
+     {
+        int d;
+        printf("enter your value");
+        scanf("%d",&d);
+        int volume=d*d*d;
+        printf("volume=%d",volume);
+      }
+      else if(c=='t')
+      {
+        int d;
+        printf("enter your base");
+        scanf("%d",&d);
+        int e;
+        printf("enter your height");
+        scanf("%d",&e);
+        int volume=d*e;
+        printf("volume=%d",volume);  
+      }
+      else if(c=='r')
+     {
+      int f;  
+      printf("enter length");
+      scanf("%d",&f);
+      int g;
+      printf("enter breadth");
+      int h;
+      printf("enter height");
+      scanf("%d",&h);
+      int volume=g*f*h; 
+      printf("volume=%d",volume);
+     }
+     else
+    {
+       printf("enter valid choice");
+    }
+
+    return 0;  
+  }
+    
+********************************************************************************************
+14
+#include <stdio.h>
+
+int main()
+{
+    char word;
+    printf("enter the value");
+    scanf("%c",&word);
+    if((word>='a'&& word<='z')||(word>='A'&& word<='Z'))
+    {
+        printf("WORD IS ALPHABET");
+    }
+    else
+    {
+     printf("var is a digit");
+    }
+
+    return 0;
+}
+******************************************************************************************************
+15
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d,e;
+    printf("enter the marks of a,b,c,d,e");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    int total=a+b+c+d+e;
+    float percentage=total/5*100/100;
+    if(percentage==25)
+    {
+        printf("percentage=%f",percentage);
+        printf("F");
+    }
+    else if(percentage>25&&percentage<=45)
+    {
+     printf("percentage=%f",percentage);
+        printf("E");
+    }
+    else if(percentage>45&&percentage<=50)
+    {
+     printf("percentage=%f",percentage);
+        printf("D");
+    }
+    else if(percentage>50&&percentage<=60)
+    {
+     printf("percentage=%f",percentage);
+        printf("C");
+    }
+    else if(percentage>60&&percentage<=80)
+    {
+     printf("percentage=%f",percentage);
+        printf("B");
+    }
+    else if(percentage>80)
+    {
+     printf("percentage=%f",percentage);
+        printf("A");
+    }
+    else
+    {
+        printf("enter valid marks");
+    }
+    
+    return 0;
+}
+*******************************************************************************************************
+16
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d,e;
+    printf("enter the marks of a,b,c,d,e");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    if(a>=40 && b>=40 && c>=40 && d>=40 && e>=40)
+    {
+     int avg=(a+b+c+d+e)/5;
+     if(avg>=45 && avg<=50)
+    {
+        printf("avg=%d",avg);
+        printf("D");
+    } 
+     else if(avg>50 && avg<=60)
+    {
+        printf("avg=%d",avg);
+        printf("C");
+    }
+    
+     else if(avg>60 && avg<=80)
+    {
+        printf("avg=%d",avg);
+        printf("B");
+    }
+     else if(avg>80)
+    {
+       printf("avg=%d",avg);
+       printf("A");
+    }
+    
+    else
+    {
+     printf("FAIL");
+    }
+    }
+    
+    return 0;
+}
+
+********************************************************************************************
+#include <stdio.h>
+
+int main()
+{
+    int rollno;
+    printf("enter your roll no");
+    scanf("%d",&rollno);
+    int a,b,c;
+    printf("enter your a,b,c");
+    scanf("%d %d %d",&a,&b,&c);
+    int total=a+b+c;
+    printf("total=%d \n",total);
+    int percentage=(total/3)*100/100;
+    printf("percentage=%d",percentage);
+    if(percentage>=33 && percentage<=50)
+    {
+        printf("FIRST DIVISION");
+    }
+    else if(percentage>50 && percentage<=80)
+    {
+        printf("SECOND DIVISION");
+    }
+    else if(percentage>80 && percentage<=100)
+    {
+        printf("THIRD DIVISION");
+    }
+    else
+    {
+        printf("FAIL");
+    }
+
+    return 0;
+}
+***************************************************************************************************

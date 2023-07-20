@@ -1,0 +1,92 @@
+#include <stdio.h>
+
+int main()
+{
+	char vow;
+	printf("enter a letter");
+	scanf("%c",&vow);
+	if(vow=='a'||vow=='e'||vow=='i'||vow=='o'||vow=='u')
+	{
+		printf("it is a vowel");
+	}
+	else{
+		printf("it is not vowel");
+	}
+	return 0;
+	
+}
+#################################################
+#include <stdio.h>
+
+int main()
+{
+	int year;
+	printf("enter a year");
+	scanf("%d",&year);
+	if(year%4==0)
+	{
+		printf("it is a leap yar");
+	}
+	else{
+		printf("it is not leap year");
+	}
+	return 0;
+	
+}
+####################################################################
+#include <stdio.h>
+
+int main()
+{
+	char alpha;
+	printf("enter a letter");
+	scanf("%c",&alpha);
+	if(alpha=='a'||alpha=='f'||alpha=='g'||alpha=='h')
+	{
+		printf("the condition is satisfied");
+	}
+	else{
+		printf("the condition is not satisfied");
+	}
+	return 0;
+	
+}
+#####################################################################
+#include <stdio.h>
+
+int main()
+{
+	char gender;
+	printf("enter gender f or m");
+	scanf("%c",&gender);
+	if(gender=='f')
+	{
+		printf("female");
+	}
+	else{
+		printf("male");
+	}
+	return 0;
+	
+}
+###########################################################################3
+#include <stdio.h>
+
+int main()
+{
+	int h,e,m,s,c;
+	printf("enter marks");
+	scanf("%d %d %d %d %d",&h,&e,&m,&s,&c);
+	if(h>=40 && e>=40 && m>=40 && s>=40 &&c>=40)
+	{
+	   int average=h+e+m+s+c/5;
+		printf("average=%d ",average);
+		printf("pass");
+	}
+	else{
+		printf("fail");
+	}
+	return 0;
+	
+}
+

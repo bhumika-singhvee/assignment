@@ -1,0 +1,182 @@
+#ASSIGMENT HOMEWORK-18-07-2023
+#Q1
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("enter a number");
+	scanf("%d",&a);
+	if(a%2==0)
+	{
+		printf("a is a even number");
+	}
+	else{
+		printf("a is odd number");
+	}
+	return 0;
+}
+*************************************************************************
+#Q2 swap value 1
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("enter a number");
+	scanf("%d %d",&a,&b);
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	printf("the swap value of a is %d\n",a);
+	printf("the swap value of b is %d\n",b);
+	return 0;
+}
+**********************************************************************
+#Q3swap value 2
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("enter a number");
+	scanf("%d %d",&a,&b);
+	a=a*b;
+	b=a/b;
+	a=a/b;
+	printf("the swap value of a is %d\n",a);
+	printf("the swap value of b is %d\n",b);
+	return 0;
+}
+*********************************************************************************
+Q4 SWAP VALUE 3
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("enter a number");
+	scanf("%d %d %d",&a,&b,&c);
+	c=a;
+	a=b;
+	b=c;
+	printf("the swap value of a is %d\n",a);
+	printf("the swap value of b is %d\n",b);
+	return 0;
+}
+**********************************************************************************
+Q5 
+#include<stdio.h>
+int main()
+{
+	int hindi,eng,maths,sci,comp;
+	printf("enter marks ");
+	scanf("%d %d %d %d %d",&hindi,&eng,&maths,&sci,&comp);
+	if(hindi>=40 && eng>=40 && maths>=40 && sci>=40 &&comp>=40)
+	{
+		printf("pass in all subject");
+	}
+	else
+	{
+		printf("not pass");
+	}
+	return 0;
+}
+************************************************************************************
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("enter num");
+	scanf("%d",&a);
+	if(a==5||a==7||a==13||a==11)
+	{
+		print("num is equal");
+	}
+	else
+	{
+		print("not valid");
+	}
+	return 0;
+}
+********************************************************************************************
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("enter number");
+	scanf("%d",&a); 
+	if(a%11==0 && a%5==0)
+	{
+		printf("number is divisble by both");
+	}
+	else
+	{
+		print("number is not divisble " );
+	}
+	return 0;
+}
+***************************************************************************************************
+#include<stdio.h>
+int main(){
+	int num;
+	printf("enter number");
+	scanf("%d",&num);
+	if(num>50)
+    {
+		printf("num is greater than 50");
+	}
+	else
+	{
+		printf("num is less than 10");
+	}
+	return 0;
+}
+***************************************************************************************************
+#include<stdio.h>
+int main(){
+	int a;
+	printf("enter number");
+	scanf("%d",&a);
+	
+	if(a%5==0)
+    {
+		printf("number is divisble by 5 ");
+	}
+	else
+	{
+		printf("number is not divisble by 5");
+	}
+	return 0;
+}
+####################################################################################################
+#include<stdio.h>
+int main()
+{
+	int age;
+	printf("enter age");
+	scanf("%d",&age);
+	if(age>=18)
+	{
+		print("eligble to vote ");
+	}
+	else
+	{
+		print("not eligble to vote");
+	}
+	return 0;
+}
+####################################################################################################
+
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("enter a number");
+	scanf("%d %d %d",&a,&b,&c);
+	if(a>b && a>c)
+        {
+	 printf("a is greater");
+         }
+        else
+        {
+	printf("a is not greater");
+        }
+	return 0;
+**********************************************************************************************************
