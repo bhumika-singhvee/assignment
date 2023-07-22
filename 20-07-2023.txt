@@ -16,3 +16,135 @@ int main()
     printf("the reverse number of num is %d",sum);
     return 0;
 }
+***********************************************************************************888
+#palindrome
+#include <stdio.h>
+
+int main()
+{
+  int num;
+  printf("enter num");
+  scanf("%d",&num);
+  int rem,sum=0;
+  int temp;
+  temp=num;
+  while(num>0)
+  {
+    rem=num%10;
+    sum=sum*10+rem;
+    num=num/10;
+  }
+   if(temp==sum)
+  {
+    printf("it is a palimdrone number");
+  }
+   else
+  {
+    printf("this is not a palimdrone number");
+  } 
+    return 0;
+}
+#########################################################################
+#armstrong
+#include <stdio.h>
+
+int main()
+{
+  int num;
+  printf("enter num");
+  scanf("%d",&num);
+  int rem,sum=0;
+  int temp;
+  temp=num;
+  while(num>0)
+  {
+    rem=num%10;
+    sum=sum+rem*rem*rem;
+    num=num/10;
+  }
+   if(temp==sum)
+  {
+    printf("it is a armstrong number");
+  }
+   else
+  {
+    printf("this is not a armstrong number");
+  } 
+    return 0;
+}
+############################################################################
+#factorial
+#include <stdio.h>
+
+int main()
+{
+  int num=5,i=1;
+  int fact=i;
+  while(i<=num)
+  {
+    fact*=i;
+    i++;
+   }
+   printf("%d",fact);
+    return 0;
+}
+***************************************************************************************
+#advanced if else-q13
+#include <stdio.h>
+
+int main()
+{
+    int pieces;
+    printf("Enter pieces");
+    scanf("%d",&pieces);
+    if(pieces>=1 && pieces<=15)
+    {
+        printf("you get 15 percent discount\n");
+    }
+    else if(pieces>=16 && pieces<=30)
+    {
+        printf("you get 30 percent discount\n");
+    }
+    else if(pieces>=31 && pieces<=50)
+    {
+        printf("you get 50 percent discount\n");
+    }
+    else
+    {
+        printf("you are not valid for discunt");
+    }
+    int amount;
+    printf("Enter amount");
+    scanf("%d",&amount);
+    if(amount>=100 && amount<=1000)
+    {
+     int discount=amount*5/100;
+     int total=amount-discount;
+     printf("total=%d",total);
+    }
+    else if(amount>1000 && amount<=2000)
+    {
+     int discount=amount*10/100;
+     int total=amount-discount;
+     printf("total=%d",total);
+    }
+    else if(amount>2000 && amount<=3000)
+    {
+     int discount=amount*15/100;
+     int total=amount-discount;
+     printf("total=%d",total);
+    }
+    else if(amount>3000)
+    {
+     int discount=amount*30/100;
+     int total=amount-discount;
+     printf("total=%d",total);  
+    }
+    else
+    {
+        printf("enter valid amount");
+    }
+
+    return 0;
+}
+#####################################################################################
