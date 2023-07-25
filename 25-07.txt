@@ -1,0 +1,531 @@
+#include <stdio.h>
+//fun define
+int show(int a,int b);
+int main()
+{
+    int result=show(2,4);
+    printf("%d",result);
+    return 0;
+}
+//fun def
+int show(int a,int b)
+{
+    int c;
+    c=a+b;
+    return c;
+}
+_________________________________________________________________________________________________________
+#include <stdio.h>
+//fun define
+int show(int a,int b,int c,int d);
+int main()
+{
+    int result=show(2,4,5,6);
+    printf("%d",result);
+    return 0;
+}
+//fun def
+int show(int a,int b,int c,int d)
+{
+    int e;
+    e=a+b+c+d;
+    return e;
+}    
+_________________________________________________________________________________________________
+#include <stdio.h>
+//fun define
+int show(int a,int b);
+int main()
+{
+    int result=show(2,5);
+    printf("%d",result);
+    return 0;
+}
+//fun def
+int show(int a,int b)
+{
+    int c;
+    c=a+b;
+    return c;
+}    
+_______________________________________________________________________________________________________
+   #include <stdio.h>
+//fun define
+int show(int a,int b);
+int main()
+{
+    int result=show(6,5);
+    printf("%d",result);
+    return 0;
+}
+//fun def
+int show(int a,int b)
+{
+    int c;
+    c=a-b;
+    return c;
+}    
+______________________________________________________________________________________
+#include <stdio.h>
+//fun define
+int show(int a,int b);
+int main()
+{
+    int result=show(6,5);
+    printf("%d",result);
+    return 0;
+}
+//fun def
+int show(int a,int b)
+{
+    int c;
+    c=a*b;
+    return c;
+}    
+________________________________________________________________________________
+#include <stdio.h>
+//fun define
+int show(int a,int b);
+int main()
+{
+    int result=show(10,5);
+    printf("%d",result);
+    return 0;
+}
+//fun def
+int show(int a,int b)
+{
+    int c;
+    c=a/b;
+    return c;
+}    
+_________________________________________________________________________________
+
+#include <stdio.h>
+//fun define
+int add(int a,int b);
+int sub(int a,int b);
+int multiply(int a,int b);
+int divide(int a,int b);
+int mod(int a,int b);
+int main()
+{
+    int result=add(10,5);
+    printf("%d \n",result);
+    int result1=sub(10,5);
+    printf("%d \n",result1);
+    int result2=multiply(10,5);
+    printf("%d \n",result2);
+    int result3=divide(10,5);
+    printf("%d \n",result3);
+    int result4=mod(10,5);
+    printf("%d \n",result4);
+    return 0;
+    
+}
+//fun def
+int add(int a,int b)
+{
+    int c;
+    c=a+b;
+    return c;
+} 
+int sub(int a,int b)
+{
+    int c;
+    c=a-b;
+    return c;
+} 
+int multiply(int a,int b)
+{
+    int c;
+    c=a*b;
+    return c;
+} 
+int divide(int a,int b)
+{
+    int c;
+    c=a/b;
+    return c;
+}  
+int mod(int a,int b)
+{
+    int c;
+    c=a%b;
+    return c;
+}    
+___________________________________________________________________________________________________
+#include <stdio.h>
+//fun define
+int voter(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int age=voter(a);
+    return 0;
+}
+//fun def
+int voter(int a)
+{
+   if(a>=18)
+   {
+    printf("eligble to vote");
+   }
+    else
+    {
+    printf("not eligble to vote");    
+    }
+}    
+___________________________________________________________________________
+#include <stdio.h>
+//fun define
+int value(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b=value(a);
+    return 0;
+}
+//fun def
+int value(int a)
+{
+   if(a%2==0)
+   {
+    printf("even number");
+   }
+    else
+    {
+    printf("odd number");    
+    }
+return a;
+}
+________________________________________________________________________________
+#include <stdio.h>
+//fun define
+int value(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b=value(a);
+    int rem,sum=0;
+    return 0;
+}
+//fun def
+int value(int a)
+{
+  int rem,sum=0; 
+  while(a>0)
+  {   
+   rem=a%10;
+   sum=sum*10+rem;
+   a=a/10;
+   }
+   printf("the reverse number is:%d",sum);
+return a;
+}
+____________________________________________________________________
+#include <stdio.h>
+//fun define
+int value(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b=value(a);
+    int rem,sum=0;
+    return 0;
+}
+//fun def
+int value(int a)
+{
+  int rem,sum=0; 
+  int temp;
+  temp==a;
+  while(a>0)
+  {   
+   rem=a%10;
+   sum=sum*10+rem;
+   a=a/10;
+  }
+    if(temp==a)
+   {
+     printf("the number is palimdrone");
+   }
+     else
+   {
+     printf("the number is not s palimdrone");   
+   }
+return a;
+}
+____________________________________________________________________________
+#include <stdio.h>
+//fun define
+int value(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b=value(a);
+    int rem,sum=0;
+    return 0;
+}
+//fun def
+int value(int a)
+{
+  int rem,sum=0; 
+  int temp;
+  temp==a;
+  while(a>0)
+  {   
+   rem=a%10;
+   sum=sum+rem*rem*rem;
+   a=a/10;
+  }
+    if(temp==sum)
+   {
+     printf("the number is armstrong");
+   }
+     else
+   {
+     printf("the number is not armstrong");   
+   }
+return a;
+}
+_____________________________________________
+#include <stdio.h>
+//fun define
+int value(int a);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b=value(a);
+    return 0;
+}
+//fun def
+int value(int a)
+{
+  int n=2;
+  while(a>=n)
+  {   
+  if(a%n==0)
+   {
+     printf("the number is not prime");
+     break;
+   }
+  else if(a-1==n)
+   {
+     printf("the number is prime");   
+     break;
+   }
+   n++;
+  }
+return 0;
+}
+__________________________________
+
+#include <stdio.h>
+//fun define
+int value(int a,int b);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b;
+    scanf("%d",&b);
+    return 0;
+}
+//fun def
+int value(int a,int b)
+{
+ 
+    a=a+b;
+    b=a-b;
+    a=a-b;
+printf("%d",a);
+printf("%d",b);
+return 0;
+}
+_______________________________________________________________________________
+
+#include <stdio.h>
+void add();
+void sub();
+void divide();
+void multiply();
+void mod();
+int main()
+{
+    add();
+    sub();
+    divide();
+    multiply();
+    mod();
+    return 0;
+    
+}
+//fun def
+void add()
+{
+ int a=78,b=56,c;
+ c=a+b;
+ printf("%d \n",c);
+}
+void sub()
+{
+ int a=98,b=76,c;
+ c=a-b;
+ printf("%d \n",c);
+}
+void multiply()
+{
+ int a=78,b=56,c;
+ c=a*b;
+ printf("%d \n",c);
+}
+void divide()
+{
+ int a=9,b=3,c;
+ c=a/b;
+ printf("%d \n",c);
+}
+void mod()
+{
+ int a=56,b=9,c;
+ c=a%b;
+ printf("%d",c);
+}
+____________________________________________________________________________
+
+#include <stdio.h>
+void show1();
+void show2();
+void show3();
+void show4();
+void show5();
+int main()
+{
+    show1();
+    show2();
+    show3();
+    show4();
+    show5();
+    
+    return 0;
+    
+}
+//fun def
+void show1()
+{
+ 
+ printf("hii \n");
+}
+void show2()
+{
+ 
+ printf("hello \n");
+}
+void show3()
+{
+ 
+ printf("what \n");
+}
+
+void show4()
+{
+ 
+ printf("how are you \n");
+}
+void show5()
+{
+ 
+ printf("byee");
+}
+_______________________________________________________________________________
+#include <stdio.h>
+//fun define
+int value(int a ,int c);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int c;
+    scanf("%d",&c);
+    int b=value(a,c);
+    return 0;
+}
+//fun def
+int value(int a,int c)
+{
+  a=a+c;
+  c=a-c;
+  a=a-c;
+   {
+     printf("the number swap of a:%d\n",a);
+     printf("the number swap of c:%d\n",c);
+     
+   }
+  
+return 0;
+}
+__________________________________________________________________________
+#include <stdio.h>
+//fun define
+int value(int a ,int c);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int c;
+    scanf("%d",&c);
+    int d=value(a,c);
+    return 0;
+}
+//fun def
+int value(int a,int c)
+{
+  a=a*c;
+  c=a/c;
+  a=a/c;
+   {
+     printf("the number swap of a:%d\n",a);
+     printf("the number swap of c:%d\n",c);
+     
+   }
+  
+return 0;
+}
+________________________________________________________________
+#include <stdio.h>
+//fun define
+int value(int a ,int b,int c);
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int b;
+    scanf("%d",&b);
+    int c=0;
+    int d=value(a,b,c);
+    return 0;
+}
+//fun def
+int value(int a,int b,int c)
+{
+  a=c;
+  b=a;
+  b=c;
+   {
+     printf("the number swap of a:%d\n",a);
+     printf("the number swap of b:%d\n",b);
+     
+   }
+  
+return 0;
+}
+_________________________________________________________________________________________
+
+
