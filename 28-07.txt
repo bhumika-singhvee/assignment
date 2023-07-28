@@ -1,0 +1,119 @@
+
+#include <stdio.h>
+
+int main()
+{ 
+  int n;
+  printf("enter number");
+  scanf("%d",&n);
+  if(n%5==0&&n%11==0)
+  {
+    printf(" no is divisble by 5 and 11:%d",n);  
+  }
+  else
+  {
+    printf(" no is not divisble by 5 and 11:%d",n);    
+  }
+   return 0;
+}
+_____________________________________________________
+include <stdio.h>
+
+int main()
+{ 
+  int n;
+  printf("enter number");
+  scanf("%d",&n);
+  int rem,sum=0;
+  int temp;
+  temp=n;
+  while(n>0)
+  {
+    rem=n%10;
+    sum=sum*10+rem;
+    n=n/10;
+   if(temp==n)
+  {
+    printf(" palimdrome:%d",sum);    
+  }
+  else
+  {
+    printf("not a palimdone");
+  }
+  }
+  
+   return 0;
+}
+________________________________________________________________________________
+#include <stdio.h>
+
+int main()
+{
+  int n;
+  printf("enter number");
+  scanf("%d",&n);
+  int rem,sum=0;
+  int temp;
+  temp=n;
+  while(n>0)
+  {
+    rem=n%10;
+    sum=sum+rem*rem*rem;
+    n=n/10;
+  }
+  
+  if(temp==sum)
+  {
+    printf(" armstong:%d\n",sum);    
+  }
+   else
+  {
+    printf("not a armstrong");
+  }
+  
+  
+   return 0;
+}
+___________________________________________________________________________
+#include <stdio.h>
+
+int main()
+{
+  int n=30;
+  int m=20;
+  n=m+n;
+  m=n-m;
+  n=n-m;
+  printf("%d %d",m,n);
+  
+   return 0;
+}
+____________________________________________________________________
+#include <stdio.h>
+
+int main()
+{
+  int a=10,b=20,c=30,d=40,e=50;
+  if(a>b && a>c && a>d && a>e)
+  {
+    printf("a is greater");
+  }
+  if(b>a && b>c && b>d && b>e)
+  {
+    printf("b is greater");
+  }
+   if(c>a && c>b && c>d && c>e)
+  {
+    printf("c is greater");
+  }
+   if(d>a && d>b && d>c &&d>e)
+  {
+    printf("d is greater");
+  }
+   if(e>a && e>c && e>d && e>b)
+  {
+    printf("e is greater");
+  }
+   return 0;
+}
+_________________________________________________________________-
